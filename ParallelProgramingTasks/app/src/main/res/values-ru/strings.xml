@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Умножение 2 матриц</string>
+    <string name="consistent_execution">Последовательное выполенение</string>
+    <string name="parallel_fixed_thread_pool_execution">Паралельное выполнение с Fixed Thread Pool</string>
+    <string name="parallel_scheduled_thread_pool_execution">Паралельное выполнение с Scheduled Thread Pool</string>
+    <string name="parallel_cached_thread_pool_execution">Паралельное выполнение с Cached Thread Pool</string>
+    <string name="input_data">Входные данные</string>
+    <string name="matrix_size">Размер матрицы</string>
+    <string name="threads_count">Количество потоков</string>
+    <string name="execution_count">Количество выполнений</string>
+    <string name="apply">Применить</string>
+    <string name="matrix1_and_matrix2">Матрица 1 == Матрице 2?</string>
+</resources>

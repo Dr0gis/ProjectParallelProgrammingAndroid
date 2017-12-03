@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="team.incorpore.dr0gis.parallelprogramingtasks.MainActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+
+            <!-- Input Matrix size -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/etMatrixSize"
+                android:text="@string/matrix_size"
+                android:layout_marginStart="16dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <EditText
+                    android:id="@+id/etMatrixSize"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:hint="@string/matrix_size"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/acbApplyMatrixSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apply"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Input Threads count -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/etThreadsCount"
+                android:text="@string/threads_count"
+                android:layout_marginStart="16dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <EditText
+                    android:id="@+id/etThreadsCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:hint="@string/threads_count"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/acbApplyThreadsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apply"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Input Execution count -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/etExecutionCount"
+                android:text="@string/execution_count"
+                android:layout_marginStart="16dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <EditText
+                    android:id="@+id/etExecutionCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:hint="@string/execution_count"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/acbApplyExecutionCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apply"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Consistent Execution -->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/acbConsistentExecution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/consistent_execution"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"/>
+            <ProgressBar
+                android:id="@+id/pbConsistent"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:progress="0"
+                android:max="9" />
+            <TextView
+                android:id="@+id/tvOutputConsistent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center_horizontal"/>
+
+            <!-- Parallel Fixed Thread Pool Execution -->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/acbParallelFixedThreadPool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/parallel_fixed_thread_pool_execution"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"/>
+            <ProgressBar
+                android:id="@+id/pbParallelFixedThreadPool"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:progress="0"
+                android:max="9" />
+            <TextView
+                android:id="@+id/tvOutputParallelFixedThreadPool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center_horizontal"/>
+
+
+            <!-- Parallel Scheduled Thread Pool Execution -->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/acbParallelScheduledThreadPool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/parallel_scheduled_thread_pool_execution"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"/>
+            <ProgressBar
+                android:id="@+id/pbParallelScheduledThreadPool"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:progress="0"
+                android:max="9" />
+            <TextView
+                android:id="@+id/tvOutputParallelScheduledThreadPool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center_horizontal"/>
+
+            <!-- Parallel Cached Thread Pool Execution -->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/acbParallelCachedThreadPool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/parallel_cached_thread_pool_execution"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"/>
+            <ProgressBar
+                android:id="@+id/pbParallelCachedThreadPool"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:progress="0"
+                android:max="9" />
+            <TextView
+                android:id="@+id/tvOutputParallelCachedThreadPool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center_horizontal"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/acbCheckMatrix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/matrix1_and_matrix2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

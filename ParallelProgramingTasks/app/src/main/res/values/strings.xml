@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Multiply 2 matrix</string>
+    <string name="consistent_execution">Сonsistent execution</string>
+    <string name="parallel_fixed_thread_pool_execution">Parallel Fixed Thread Pool Execution</string>
+    <string name="parallel_scheduled_thread_pool_execution">Parallel Scheduled Thread Pool Execution</string>
+    <string name="parallel_cached_thread_pool_execution">Parallel Cached Thread Pool Execution</string>
+    <string name="input_data">Input data</string>
+    <string name="matrix_size">Matrix size</string>
+    <string name="threads_count">Threads count</string>
+    <string name="execution_count">Execution count</string>
+    <string name="apply">Apply</string>
+    <string name="matrix1_and_matrix2">Matrix 1 == Matrix 2?</string>
+</resources>
